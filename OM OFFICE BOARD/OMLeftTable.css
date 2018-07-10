@@ -1,0 +1,22 @@
+th {
+    border-bottom: 1px solid #ddd;
+    font-size: 40px;
+    color: red;
+}
+
+ td {
+    border-bottom: 1px solid #ddd;
+    font-size: 40px;
+    color: green;
+}
+
+#leftTable {
+    /*
+    float: right;
+    
+    table-layout: fixed;*/
+    width: 25%;
+
+    display: inline-block;
+    
+}

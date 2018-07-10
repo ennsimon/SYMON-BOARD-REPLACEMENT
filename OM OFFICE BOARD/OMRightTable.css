@@ -1,0 +1,28 @@
+th {
+    border-bottom: 1px solid #ddd;
+    font-size: 35px;
+    color: red;
+}
+
+ td {
+    border-bottom: 1px solid #ddd;
+    font-size: 35px;
+    color: green;
+
+
+    /* makes td cells evenly spaced 1/3 of table */
+    width: 33%;
+}
+#header1 { 
+    color: red;
+}
+
+#rightTable {
+    /*
+    float: right;    
+    table-layout: fixed;*/
+    width: 75%;
+    float: right;
+    table-layout: fixed;
+   /* display: inline-block;*/
+}
