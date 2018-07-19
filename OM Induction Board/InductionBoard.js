@@ -6,57 +6,35 @@ import './InductionBoard.css';
 
 class InductionBoard extends Component {
     render() {
+      
+      
+      var listItems = this.props.cdata.map(function(item) {   
       return (
-        <div >
-          <table  align="left" id="leftTable">
-            <tbody>
-              <tr>
-                <th>SRTD</th>
-                <td>1000</td>
-              </tr>
-              <tr>
-                <th>OCCRTNS</th>
-                <td>545</td>
-              </tr>
-              <tr>
-                <th>AvgBufln</th>
-                <td>44</td>
-              </tr>
-              <tr>
-                <th>Srate1</th>
-                <td>12</td>
-              </tr>
-              <tr>
-                <th>Srate2</th>
-                <td>13</td>
-              </tr>
-              <tr>
-                <th>Ttl Rat</th>
-                <td>67</td>
-              </tr>
-              <tr>
-                <th>CompCht1</th>
-                <td>109</td>
-              </tr>
-              <tr>
-                <th>CompCht2</th>
-                <td>12</td>
-              </tr>
-              <tr>
-                <th>AvChts 1</th>
-                <td>6</td>
-              </tr>
-              <tr>
-                <th>AvChts 2</th>
-                <td>156</td>
-              </tr>
-              <tr>
-                <th>BlkChts</th>
-                <td>45</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <tr>
+        <td>{item["STATN"]}</td>
+        <td>{item["ASID"]}</td>
+        <td>{item["INRATE"]}</td>
+        <td>{item["NK"]}</td>
+
+    </tr>
+  ); 
+});  
+
+return (
+  <div >
+    <table  align="center" id="InductionBoard" width="1000">
+      <tbody>
+          
+        <tr id="InductionHeader">
+          <th>{this.props.h_data[0]}</th>
+          <th>{this.props.h_data[1]}</th>
+          <th>{this.props.h_data[2]}</th>
+          <th>{this.props.h_data[3]}</th>
+        </tr>
+        {listItems}
+      </tbody>
+    </table>
+  </div>
       );
     }
   }

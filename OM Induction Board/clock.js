@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 /*import Clock from 'react-digital-clock';*/
-import './Clock.css';
+import './clock.css';
 
 class Clock extends React.Component {
 constructor(props) {
@@ -39,5 +39,6 @@ return (
 </table>
 
 );
+}   
 }
-}
+export default Clock;
