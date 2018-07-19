@@ -1,0 +1,30 @@
+th {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    font-size: 72.5px;
+    color: red;
+    padding: 200px;
+    padding-top: 0px;
+    padding-block-end: 0px; 
+    padding-left: 0px;
+    text-align: center;        
+}
+
+ td {
+    border-bottom: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    font-size: 100px;
+    color: green;
+    text-align: center;
+}
+
+#leftTable {
+    /*
+    float: right;
+    
+    table-layout: fixed;*/
+    width: 25%;
+
+    display: inline-block;
+    
+}
